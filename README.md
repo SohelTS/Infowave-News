@@ -23,7 +23,8 @@ Infowave News App is a **React-based news application** that fetches the latest 
 
 ---
 
-## **Project Structure**
+## Project Structure
+```text
 infowave/
 ├── public/
 │ ├── index.html
@@ -46,7 +47,7 @@ infowave/
 └── package-lock.json
 
 
-## **Installation**
+## Installation
 
  Clone the repository:
 
@@ -67,7 +68,7 @@ Start the development server:
 bash
 npm start
 The app will run at http://localhost:3000.
-
+```
 
 Configuration
 

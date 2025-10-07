@@ -80,5 +80,5 @@ export const BASE_URL = "https://newsapi.org/v2";
 
 
 Author,
-Sohel Shaikh
+Sohel Shaikh,
 Email: ashaikh20753@gmail.com

@@ -1,7 +1,12 @@
-import React from "react";
-
 function Loader() {
-  return <div className="loader">Loading...</div>;
+  return (
+    <div style={{
+      textAlign: "center",
+      marginTop: "50px",
+      fontSize: "18px",
+      fontWeight: "bold"
+    }}>
+      Loading news...
+    </div>
+  );
 }
-
-export default Loader;

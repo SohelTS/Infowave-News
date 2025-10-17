@@ -14,22 +14,28 @@
 // export default App;
 
 
-
-import React, { useState } from "react";
+import React from "react";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
-import Footer from "./components/footer"; // We'll create this later
 
 function App() {
-  const [category, setCategory] = useState("General"); // default category
-
   return (
-    <div>
-      <Navbar onCategoryChange={setCategory} />
-      <Home category={category} />
-      <Footer />
-    </div>
+    <Router>
+      <Navbar />
+      <Routes>
+        <Route path="/" element={<Home category="general" />} />
+        <Route path="/business" element={<Home category="business" />} />
+        <Route path="/technology" element={<Home category="technology" />} />
+        <Route path="/sports" element={<Home category="sports" />} />
+        <Route path="/entertainment" element={<Home category="entertainment" />} />
+        <Route path="/health" element={<Home category="health" />} />
+        <Route path="/science" element={<Home category="science" />} />
+      </Routes>
+    </Router>
   );
 }
 
 export default App;
+
+
